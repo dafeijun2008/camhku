@@ -1,0 +1,202 @@
+/*页面通用样式*/
+body{
+	font:12px "微软雅黑",Arial,Helvetiva,sans-serif;
+	color:#666;
+	margin:0;
+}
+p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{color:#D80D18;cursor:pointer;}
+.hide{display:none;}
+.show{display:block;}
+/*布局 样式*/
+#header,#header>#top_box,#product_content,#logo,#nav,#banner,#section,#footer{
+	width:1200px;
+	margin:0 auto;
+	padding:0;
+}
+/************************header区域************************************/
+#header{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background-image:linear-gradient(to bottom,#F5F0F0,#f7f7f7);
+}
+#header #top_box>ul>li b{
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	padding:2px 0;
+}
+#header #top_box>ul>li{	float:left;text-align:center;}
+#top_box .list>li>a{display:inline-block;padding:0 10px;text-align:center;}
+/*#top_box .list li.tab{margin-right:193px;}*/
+#top_box .list .region>a,#top_box .list .help>a,#top_box .list .zoology>a{
+	padding:0 20px;
+	position:relative;
+	background:url("../imgs/arrows2.jpg") no-repeat 98px 19px;
+}
+#top_box .list .help>a,#top_box .list .zoology>a{
+	background:url("../imgs/arrows2.jpg") no-repeat 74px 18px;
+}
+#top_box .list .region>.region_items,#top_box .list .help>.help_items,#top_box .list .zoology>.zoology_items{
+	position:absolute;
+	padding:0 20px;
+	background-color:#fff;
+	display:none;
+}
+#top_box .list .region>.region_items{
+	text-align:left;
+	padding-left:30px;
+	width:70px;
+}
+#top_box .list .region:hover a,#top_box .list .help:hover a,#top_box .list .zoology:hover a{
+	background-image:url("../imgs/arrows5.jpg");
+	background-repeat:no-repeat;
+	background-position:98px 19px;
+	background-color:#fff;
+}
+#top_box .list .help:hover a,#top_box .list .zoology:hover a{
+	background-position:74px 18px;
+}
+#top_box .list .region:hover .region_items,#top_box .list .help:hover .help_items,#top_box .list .zoology:hover .zoology_items{
+	display:block;
+}
+/*#header #top_box>ul>li.shop>a{*/
+	/*display:inline-block;*/
+	/*padding-left:20px;*/
+	/*text-align:center;*/
+	/*background:url("../imgs/arrows5.jpg") no-repeat 0px 18px;*/
+/*}*/
+/****************************logo区域**************************************/
+#logo{	padding:30px 0;}
+#logo>a:first-child{
+	height:40px;
+	width:330px;
+	background:url("../imgs/logo.jpg") no-repeat;
+}
+#logo #search_box{margin:10px 10px 0 0;}
+#logo #search_box .search{
+	width:480px;
+	background-color:#D80D18;
+	height:33px;
+	padding:3px;
+}
+#logo #search_box .search .text{
+	width:390px;
+	height:28px;
+	border:none;
+	border-radius:14px;
+	outline:none;
+	padding-left:10px;
+}
+#logo #search_box .search .button{
+	width:72px;
+	height:30px;
+	border:none;
+	font-size:16px;
+	color:#fff;
+	background-color:#D80D18;
+	font-weight:bold;
+	cursor:pointer;
+}
+/***********************footer******************************/
+#footer{border-top:1px solid #ddd;}
+#service_title{margin-top:20px;}
+#service_title>ul>li{
+	float:left;
+	width:300px;
+	text-align:center;
+}
+#service_title>ul>li span:first-child{
+	display:inline-block;
+	width:34px;
+	height:34px;
+	line-height:34px;
+	text-align:center;
+	font-size:14px;
+	border:1px solid #ddd;
+	border-radius:50%;
+}
+#service_title>ul>li:hover span:first-child{
+	background-color:red;
+	color:#fff;
+}
+#service_title>ul>li:hover a{color:#FF0700;}
+#service_list .list>ul>li{
+	float:left;
+	width:235px;
+	line-height:30px;
+	height:30px;
+}
+#service_list .list{
+	height:110px;
+	margin:30px 0 30px 50px;
+}
+#service_list .list>ul>li ul li:first-child{
+	font-size:14px;
+	font-weight:bold;
+}
+#service_list #service_online .online>div:first-child,#footer #service_list #service_online .phone>div:first-child{
+	width:40px;
+	height:40px;
+	margin-right:20px;
+}
+#service_list #service_online .phone>div:first-child{
+	background:url("../imgs/logo.jpg") no-repeat -84px -75px;
+}
+#service_list #service_online .online>div:first-child{
+	background:url("../imgs/logo.jpg") no-repeat -84px -75px;
+}
+#service_list #service_online .phone,#footer #service_list #service_online .online{
+	margin-top:18px;
+}
+#service_list #service_online{
+	color:#F01E00;
+	font-weight:bold;
+}
+#service_list #service_online .number{
+	font-size:16px;
+}
+#footer_bottom{
+	text-align:center;
+	border-top:1px solid #ddd;
+	padding-top:20px;
+}
+#footer_bottom .footer_bottom_list>ul>li{
+	float:left;
+	font-weight:bold;
+	margin:0 auto;
+}
+#footer_bottom .footer_bottom_list ul b{
+	border:1px solid #666666;
+	float:left;
+	height:14px;
+	margin:0 20px;
+}
+#footer_bottom .footer_bottom_list ul{
+	margin-left:330px;
+}
+#footer_bottom div:nth-child(2){
+	padding:20px;
+}
+#footer_bottom div:nth-child(3) {
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 20px
+}

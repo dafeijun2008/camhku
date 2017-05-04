@@ -1,0 +1,56 @@
+#nav_box{border-bottom:2px solid #303233;}
+#nav{
+	
+	height:40px;
+	line-height:40px;
+}
+#nav>ul>li{float:left;}
+#nav #nav_right>li{	margin:0 10px;}
+#nav #nav_left>li{margin-right:40px;}
+#nav #nav_left>.home{position:relative;top:2px;}
+#nav #nav_left>.home>a{
+	width:220px;
+	display:block;
+	text-align:center;
+	background-color:#303233;
+	background-image:url(../imgs/home.jpg);
+	background-repeat:no-repeat;
+	background-position:30px 6px;
+	color:#fff;
+}
+/*******************全部商品分类*****************/
+#all_product_list{
+	position:absolute;
+	top:40px;
+	float:left;
+	background-color:#fff;
+	display:none;
+	z-index:10;
+}
+#all_product_list>ul:first-child{background-color:#F7F7F7;}
+#all_product_list>ul>li>a{
+	display:block;
+	width:220px;
+	height:40px;line-height:40px;
+	/*background:url(../imgs/21.jpg) no-repeat 0px 0px;*/
+}
+#nav_left>li:first-child:hover #all_product_list{
+	display:block;
+}
+#all_product_list>ul>li:hover{
+	background-color:#fff;
+}
+#all_product_list>ul>li:first-child:hover #TV_product{
+	display:block;
+}
+#all_product_list>ul>li>a>p{
+	margin-left:20px;
+}
+#TV_product{
+	display:none;width:580px;position:absolute;
+	left:220px;top:0;background-color:#fff;z-index:100;
+}
+#TV_product>ul{
+	width:145px;float:left;
+	height:320px;text-align:center;
+}

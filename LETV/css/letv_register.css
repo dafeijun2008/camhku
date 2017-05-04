@@ -1,0 +1,133 @@
+/*页面通用样式*/
+body{
+	font:12px "微软雅黑",Arial,Helvetiva,sans-serif;
+	color:#666;
+	margin:0;
+}
+p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.clear:before{
+	content:"";
+	display:block;
+	clear:both;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{color:#FF0700;cursor:pointer;}
+.hide{display:none;}
+.show{display:block;}
+/*页面通用样式结束*/
+#register{width:1200px; margin:0 auto;margin-top:30px;}
+#register #header>a,#register #header ul li,#register b{float:left;}
+#register #header ul{margin:15px 20px 0 0;}
+#register #header ul li span{	margin-right:10px;}
+#register b{
+	height:16px;border-left:1px solid #ddd;
+	border-right:1px solid #666;
+	margin:0 20px;
+}
+#section{
+	height:500px;
+	background:url(../imgs/register_background.jpg) no-repeat;
+	position:relative;
+}
+#section>.form{
+	background:#fff;position:relative;
+	left:800px;
+	top:50px;
+	padding:40px 30px;
+	opacity:0;transition:all 1.5s linear;
+	height:350px;
+	width:300px;
+}
+.hidden{
+	display:none;
+}
+#section>.form ul li span{
+	display:inline-block;
+	width:80px;
+	font-size:16px;
+	height:30px;line-height:30px;
+}
+#section>.form ul li p{
+	padding-left:30px;
+	height:30px;
+	width:258px;
+	line-height:30px;
+}
+#section>.form ul li input{height:20px;}
+#form ul li{margin:5px 0;line-height:50px;}
+
+#section>.form ul li.num{
+	color:blue;
+}
+#section>.form ul li{
+	margin-bottom: 10px;
+}
+#section>.form>form>ul>li>input{
+	width:200px;
+}
+#section>.form ul li.num span:first-child{
+	width:210px;
+}
+#section>.form ul li.num span:last-child{
+	width:70px;
+	display:inline-block;
+	text-align:center;
+	border-radius:8px;
+	background:#ddd;
+	cursor:pointer;
+	height:30px;
+	line-height:30px;
+	font-family:"MV Boli";
+}
+#section>.form>.section_top{margin-bottom:20px;}
+#section>.form>.section_top>span{
+	font-size:22px;
+	display:inline-block;
+	width:150px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background-color:#fff;
+	color:#333;
+	/*background-image:linear-gradient(to bottom,#F5F0F0,#EADEDE);*/
+}
+#section>.form>.section_top>span.bg_color{
+	/*background-image:linear-gradient(to bottom,#fff,#fff);*/
+	background-color:#50A7FA;
+	color:#fff;
+}
+#section>.form .section_top>a{margin-top:10px;}
+#section>.form ul li .btn{
+	width:288px;
+	height:35px;
+	background-color:#50A7FA;
+	color:#fff;
+	font-size:16px;
+	margin-top:10px;
+}
+
+.vali_Info{visibility:hidden;}
+.txt_focus{visibility:visible;}
+.vali_success,.vali_fail{
+	background-repeat:no-repeat;
+	background-position:left center;
+	display:block;
+}
+.vali_success{
+	background:url("../imgs/register_icon.jpg") no-repeat 3px -194px;
+}
+.vali_fail{
+	background:url(../imgs/register_icon.jpg) no-repeat 3px -94px;
+	color:red;
+}
+

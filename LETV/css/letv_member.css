@@ -1,0 +1,227 @@
+/********************banner轮播****************/
+#banner>.slider_box{
+	height:355px;
+	/*border:1px solid red;*/
+	box-sizing:border-box;
+	overflow:hidden;
+	position:relative;
+}
+#banner>.slider_box>.pic{
+	position:relative;
+	z-index:0;
+	left:0;
+}
+#banner>.slider_box>.pic>li{float:left;}
+#banner>.slider_box>.btn{
+	position:absolute;
+	top:320px;
+	left:500px;
+	z-index:2;
+}
+#banner>.slider_box>.btn>li{
+	height:30px;
+	width:30px;
+	background:red;
+	color:#fff;
+	float:left;
+	border-radius:15px;text-align:center;
+	line-height:30px;
+	margin:0 10px;
+}
+/********************banner轮播结束****************/
+/**********************section************************/
+/*属性共用*/
+.header{
+	height:80px;
+	line-height:80px;
+	text-align:center;
+	background-color:#f7f7f7;
+	color:#000;
+	font-size:26px;
+}
+#section>div.floor ul li{
+	float:left;
+}
+/*属性共用*/
+/********elevtor*****/
+#section_box{background-color:#f7f7f7;}
+#section{position:relative;}
+#elevator{
+	display:none;
+	position:fixed;
+	left:0;
+	top:260px;
+}
+#elevator>ul>li>a{
+	height:30px;
+	text-align:center;
+	display:block;
+	color:#333;
+	padding:5px 5px;
+	background-color:#ebebeb;
+	border-bottom:1px solid #fff;
+}
+#elevator>ul>li>a.hover{
+	background-color:#FA9B00;
+	color:#fff;
+}
+/********elevtor结束*****/
+#member_nav{
+	width:888px;
+	height:146px;
+	margin:30px auto;
+}
+#member_nav>ul>li{
+	float:left;
+	width:296px;
+	text-align:center;
+}
+#member_nav>ul>li>div:last-child{
+	height:40px;
+	line-height:40px;
+}
+#member_nav>ul>li>div:last-child a{
+	font-size:16px;
+}
+#member_nav>ul>li>div:first-child>a>img{
+	transition:transform .5s linear;
+}
+#member_nav>ul>li>div:first-child:hover img{
+	transform: scale(1.1);
+}
+/*超级影视会员*/
+#section_box .floor>.super_member_left,#section_box .floor>.super_member_right{
+	width:590px;
+	height:356px;
+}
+#section_box .floor ul>li{text-align:center;}
+#f1>.super_member_left{
+	background:url("../member_imgs/24.jpg") no-repeat;
+}
+#f2>.super_member_left{
+	background:url("../member_imgs/25.jpg") no-repeat;
+}
+#f3>.super_member_left{
+	background:url("../member_imgs/26.jpg") no-repeat;
+}
+#section>div.floor>div:last-child>h3{
+	height:40px;line-height:40px;
+	background-image:linear-gradient(to bottom,#F5F0F0,#f7f7f7);
+	padding-left:10px;
+	font-size:14px;
+}
+#section .floor>.super_member_right>ul>li{
+	width:190px;
+	height:140px;
+	margin-top:20px;
+}
+#section_box .floor>.super_member_right>ul>li>div{
+	width:86px;
+	height:86px;
+	margin:0 auto;
+	position:relative;
+	left:0;top:0;
+	transition:left,top .5s linear;
+	/*transition:all .5s linear;*/
+}
+#section_box .floor>.super_member_right>ul>li:hover div{
+	left:-2px;
+	top:2px;
+}
+#section_box .floor>.super_member_left{position:relative;}
+#section_box .floor>.super_member_left>.member_buy>h2,#section_box .floor>.super_member_left>.member_buy>.content_desc{
+	position:relative;
+	left:180px;
+	top:60px;
+	color:#fff;
+ }
+#section_box .floor>.super_member_left>.member_buy>.content_desc{
+	top:70px;
+}
+#section_box #f2>.super_member_left>.member_buy>.content_desc,#section_box #f2>.super_member_left>.member_buy>h2{
+	left:230px;
+}
+#section_box .floor>.super_member_left>.member_buy>.btn{
+	position:relative;
+	top:200px;
+	transition:all .3s linear;
+}
+#section_box .floor>.super_member_left>.member_buy>.btn>a{
+	display:block;
+	width:350px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#fff;
+	border:1px solid #fff;
+	margin:0 auto;
+	font-size:22px;
+	background-color:#BF3C1B;
+}
+#section_box .floor>.super_member_left:hover .btn{
+	top:198px;
+}
+#section_box #f2>.super_member_left>.member_buy>.btn>a{
+	background-color:#FF8F2C;
+}
+#section_box #f3>.super_member_left>.member_buy>.btn>a{
+	background-color:#C80000;
+}
+/*热映大片*/
+#f4>div.movie_box>ul>li,#f5>ul>li{
+	width:204px;
+	height:256px;
+	padding:10px;
+	margin-left:13px;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:20px;
+	text-align:left;
+}
+#f4>div.movie_box>ul>li>div{width:204px;box-sizing: border-box;}
+#f4>div.movie_box>ul>li>div.content{
+	position:absolute;
+	left:10px;
+	top:230px;
+	color:#fff;
+	height:164px;
+	background:rgba(0,0,0,0.5);
+	padding:10px;
+	transition:all .5s linear;
+}
+#f4>div.movie_box>ul>li:hover div.content{
+	top:112px;
+}
+#f4>div.movie_box>ul>li>div.content>h2{
+	margin-bottom:10px;
+}
+#f4>div.movie_box>ul>li>div.content>p{
+	line-height:20px;
+}
+
+/*劲爆体育*/
+#f5>ul>li{
+	width:206px;
+	height:200px;
+}
+#f5>ul>li>div{
+	height:152px;
+	border:1px solid #e7e7e7;
+	transition:all .3s linear;
+}
+#f5>ul>li:hover div{
+	border:1px solid #D80D18;
+}
+#f5>ul>li:hover p>a{
+	color:#D80D18;
+}
+#f5>ul>li>p{
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+	margin-top:10px;
+	font-weight:bold;
+}
+#f5>ul{margin-top:10px;}
+#f5>ul>li>div{}
+/**********************section结束************************/

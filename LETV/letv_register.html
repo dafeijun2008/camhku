@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/letv_register.css">
+  <!--<link rel="stylesheet" href="css/commen.css">-->
+ </head>
+ <body>
+	<div id="register">
+		<div id="header">
+			<a href="index.html" class="lf"><img src="imgs/register_logo.jpg" alt=""></a>
+			<ul class="rt">
+				<li><a href="index.html">首页</a></li><b></b>
+				<li><span>语言:</span><a href="#">简体中文</a></li><b></b>
+				
+				<li><a href="#">帮助</a></li>
+			</ul>
+			<p class="clear"></p>
+		</div>
+		
+		<div id="section">
+			<div class="form">
+				<div class="section_top">
+					<span >注册</span><span class="bg_color">登录</span>
+				</div>
+				<form method="post"class="register hidden">
+					<ul>
+						<li>
+							<span>用 户 名 :</span>
+							<input type="text"name="uname"class="uname"autocomplete="off">
+							<p class="">请输入3-10位字符</p>
+						</li>
+
+						<li>
+							<span>密  码 :</span>
+							<input type="password"name="upwd"class="upwd"autocomplete="off">
+							<p class="">请输入6-8位数字</p>
+						</li>
+	
+						<li>
+							<span>验 证 码 :</span>
+							<input type="text"name="code"class="code"autocomplete="off">
+							<p class="">请输入验证码</p>
+						</li>
+						<li class="num"><span>点击图片更换验证码</span><span>2468</span></li>
+						<i class="clear"></i>
+						<li><button type='button' class="btn">注册</button></li>
+					</ul>
+				</form>
+				<form method="post"class="login">
+					<ul>
+						<li>
+							<span>用 户 名 :</span>
+							<input type="text"name="uname"class="uname"autocomplete="off">
+							<p class="">请输入3-10位字符</p>
+						</li>
+
+						<li>
+							<span>密  码 :</span>
+							<input type="password"name="upwd"class="upwd"autocomplete="off">
+							<p class="">请输入6-8位数字</p>
+						</li>
+
+						<li>
+							<span>验 证 码 :</span>
+							<input type="text"name="code"class="code"autocomplete="off">
+							<p class="">请输入验证码</p>
+						</li>
+						<li class="num"><span>点击图片更换验证码</span><span>2468</span></li>
+						<i class="clear"></i>
+						<li><button type='button' class="btn">登录</button></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/letv_register.js"></script>
+	<script src="js/register_php.js"></script>
+ </body>
+</html>
